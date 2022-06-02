@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  <!--한글을 지원하는 대표적인 인코딩 방식 설정 목록-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>CSS Flex 학습</title>
+    
+    <link rel="stylesheet" href="0520게시판.css">
+    
+    <style>
+        .flex-container {
+            display: flex;       flex는 그냥 늘어나 있는것
+            /* display: inline-flex; */
+            /* inline-flex는 폰트 size에 맞춰진다              */
+            /* flex-direction: row */
+            /* flex-direction: row-reverse;   */
+            /* flex-direction: column */
+            /*row에서 메인축 방향 변경됨 */
+            /* flex-direction: column-reverse; */
+            /*column값 반대 */
+        
+            /* flex-wrap: wrap; */
+            /* 컨테이너보다 아이템 값이 넘어가면 끝에 아이템을 아래로 떨어트림 */
+            
+            /* flex-flow: row wrap;
+            /* flex-direction 하고 flex-flow를 합쳐 사용한것 */ */
+
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <h2>게시판</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">게시글 1 입니다.</div>
+        <div class="flex-item">김준석 |  조회:15 | 2022-05-16 (09:00)</div>
+    </div>
+    
+
+    <div span="flex-container2">게시판 3가지 말들기 끝났습니다.</div>
+    <div class="flex-container2">게시판 3가지 말들기 끝났습니다.</div>
+    <div class="flex-container2">게시판 3가지 말들기 끝났습니다.</div>
+    <div class="flex-container2">게시판 3가지 말들기 끝났습니다.</div>
+    <div class="flex-container2">게시판 3가지 말들기 끝났습니다.</div>
+
+
+
+
+
+</body>
+
+
+</html>

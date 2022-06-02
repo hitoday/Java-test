@@ -1,0 +1,21 @@
+구글 수업 드라이브
+https://drive.google.com/drive/folders/1Jwed8v7mri5j6kRww2F3xqFscln5DQF8?usp=sharing
+
+0516 수업
+20220516
+
+www.keybr.com 타자 연습 사이트
+
+https://www.w3schools.com/tags/default.asp
+
+
+<TagName title="optionValue">
+
+tcpschool.com // HTML 태그 검색 홈페이지 찾는방법
+
+LocalHost:127.0.0.1:5500
+
+<h1 title="header">HELLO HTML5</h1>	 //HTML5 태그의 데이터 표현 -h1 태그의 title 속성
+<img src="image.png"/>			 //이미지 파일을 불러오는 방법임 image태그의 src속성
+
+글자 강조 태그 <b>굵게, <i>기울임, <u>밑줄   //태그 

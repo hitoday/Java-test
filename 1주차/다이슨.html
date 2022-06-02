@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">  <!--한글을 지원하는 대표적인 인코딩 방식 설정 목록-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>CSS Flex</title>
+    
+    <link rel="stylesheet" href="defauilt.css">
+    
+    <style>
+        .flex-container {
+            display: flex;       /* flex는 그냥 늘어나 있는것*/
+            /* display: inline-flex;       inline-flex는 폰트 size에 맞춰진다         */
+            flex-direction: row;  row값 반대     
+            /* flex-direction: row-reverse;  row값 반대      */
+            /* flex-direction: column row에서 메인축 방향 변경됨 */
+            /* flex-direction: column-reverse; column값 반대 */
+        
+            /* flex-wrap: wrap; 컨테이너보다 아이템 값이 넘어가면 끝에 아이템을 아래로 떨어트림 */
+            
+            /* flex-flow: row wrap; flex-direction 하고 flex-flow를 합쳐 사용한것 */
+
+        }
+        .container1 {
+            padding: 10px;
+            border: 3px solid rgb(50,50,40);
+            color: white;
+            background: block;        
+        }
+
+        .item1 {
+            padding: 10px;
+            border: 3px solid red;
+            color: white;
+            background: black;
+
+        }
+
+    </style>
+    
+</head>
+
+<body>
+
+    <div class="container1">
+        <div class="item1">dyson</div>
+        <div class="flex-item"></div>
+        <div class="flex-item">ccccccccccc</div>
+    </div>
+
+</body>
+
+
+</html>

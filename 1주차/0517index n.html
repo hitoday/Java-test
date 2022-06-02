@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                         <! Html 안에 head는 꼭 하나만 있어야한다>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>                                                         <! Html 안에 body는 꼭 하나만 있어야한다>
+   
+                                            
+    <article>                                                 <!아티클 태그는 검색을 위해 사용>   
+        <h1>블로그 게시글 업로드</h1>
+
+    </article>    
+
+    <form>
+        이름 :
+        <input type="text" autofocus name="name"><br>
+        이메일 :
+        <input type="text" name="email"><br>
+        게시글 내용 :
+        <textarea name="search" rows=1 cols=15> </textarea></br>
+
+        <p> <input type="button" value="Submit"> </p>                                <! 말그대로 버튼 만들어주고 value는 버튼 이름>
+                                                         
+           <h1>간편 회원 가입</h1>    
+   
+        #TCP School 사이트에서 Filedset 태그와 placeholder 속성값을 참조하여 작성해 주세요
+
+
+            <ol>                                                 <! ol Tag 앞에 숫자로 순서가 표시되는 Tag>
+                <li>입력정보</li>
+            <fieldset>
+                
+                1.이름 <input placeholder="이름", type="text" name="name"><br>
+                2.이메일 <input placeholder="example@example.kr", type="text" name="email"><br>
+                3.휴대폰 번호 <input placeholder="01000010002" type="text" name="phone number">
+            </fieldset>
+      
+            <li>인증코드</li> <input type="text" name="email">
+            
+            
+            </ol> 
+
+            <h1>기본 회원 가입</h1>
+            
+
+            #TCP School 사이트에서 select tag 참조하여 작성해 주세요 <br>
+                       
+
+            
+            <table>
+                <tr>
+                    <td>아이디</td><br>                                 <! td는 테이블에 내용>
+                    <td>비밀번호</td>
+                </tr>
+                <tr>                                                <! th, td구별해서 넣어줘야함><!숫자3은 3칸,3열 합치기>
+                    <th colspan="3">Table Data</th>                 <! colspan 셀 합치기>
+                    <th rowspan="3">Table Data</th>                 <! rowspan 열 합치기>
+                </tr>
+                
+            
+            
+            아이디
+            <input type="text" name="id"><br>
+            비밀번호
+            <input type="text" name="pass word"><br>
+            비밀번호확인
+            <input type="text" name="pass word check"><br>
+            이름
+            <input type="text" name="name"><br>
+            <lable><input type="radio" name="gender" value="male">남성</lable>
+            <lable><input type="radio" name="gender" value="female">여성</lable>
+            <lable><input type="radio" name="gender" value="no check">입력안함</lable><br>
+           
+            
+            전화번호
+            <select>
+                <option value="seoul">02</option>
+                <option value="busan">051</option>
+                <option value="daegu">053</option>
+                <option value="gwanju">062</option>
+                <option value="incheon">032</option>
+                <option value="daejeon">042</option>
+                <option value="ulasn">052</option>
+                <option value="gyeonggi">031</option>
+                <option value="gangwon">033</option>
+                <option value="Chungcheongbuk">043</option>
+                <option value="Chungcheongnam">041</option>
+                <option value="Jeollabuk">063</option>
+                <option value="Jeollanam">061</option>
+                <option value="Gyeongsangbuk">054</option>
+                <option value="Gyeongsangnam">055</option>
+                <option value="Jeju">064</option>
+                <option value="sejong">044</option>
+
+            </select>
+                
+            -
+            <input type="text" name="phone number">
+            -
+            <input type="text" name="phone number"><br>  
+            이메일
+            <input type="text" name="email">
+            @
+            <select>
+                <option value="선택">선택</option>
+                <option value="naver">naver.com</option>
+                <option value="google">google.com</option>
+
+            </select>
+
+            <br>
+
+            소개내용 
+             <textarea name="search" rows=5 cols=100> </textarea></br>
+
+
+        </form>
+  
+
+        
+
+                
+
+</body>
+</html>

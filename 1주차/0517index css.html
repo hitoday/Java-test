@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                         <! Html 안에 head는 꼭 하나만 있어야한다>
+    <meta charset="UTF-8">
+    <title>CSS3 Selector Basic</title>
+
+    <! style은 head에 먼저 입력 후 작성하자>
+    
+    <style>    
+        /* id 속성값으로header를 가지는 태그의 자손에 위치에 있는 h1 태그의 color 속성에 red 키워드를 적용합니다.*/                                             
+        #header > h1 {color: red;}
+    
+        /* id 속성값으로 section을 가지는 태그의 자손에 위치에 있는 h1 태그의 color 속성에 orange 키워드를 적용합니다.*/                                             
+        #section > h1 {color: orange;}
+            
+    </style>
+</head>
+       
+<body> 
+        <div id="header">
+            <h1 class="title">Lorem ipsum</h1>
+            <div id="nav">                   <! 자손 선택자는 #nav 태그 아래에 있는 h1 태그에는 스타일이 적용되지 않음>
+                <h1>Navigation</h1>
+            </div>
+        </div>
+        <div id="section">
+            <h1 class="title">Lorem ipsum</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+       </div>
+          
+
+                
+
+</body>
+</html>

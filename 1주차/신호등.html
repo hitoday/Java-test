@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>                                                         <! Html 안에 head는 꼭 하나만 있어야한다>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>                                                         <! Html 안에 body는 꼭 하나만 있어야한다>
+    반갑습니다~</br>
+    잘 부탁립니다
+    <h6>Hello HTML5</h6>
+    <br>abc</br>                                              <!앞뒤 줄바꿈>
+    <article>                                                 <!아티클 태그는 검색을 위해 사용>   
+        <h1>Article</h1>
+       <h2></h2> <img src="강아지.jfif" alt="강아지" width="300"/> <!그림파일 넣는방법 : 저장폴더에 파일명 확장자명 입력>
+                                                                  <! width 그림사이즈 조정이 가능하다>      
+    </article>
+        <from>
+            <input class=""abc" type="color"><br>
+            <input type="datetime-local"><br>
+        </from>
+        <!a 태그의 href 속성 사용시 하이퍼링크가 연결됨>
+        <a href="https://www.naver.com/">Naver</a><br />      <!하이퍼링크 태그방법 : Naver 이라는 이름에 링크연동>
+        <a href="https://www.github.com/">GitHub</a><br />
+
+        <h1>ol tag</h1>
+        <ol>                                                  <! ol Tag 앞에 숫자로 순서가 표시되는 Tag>
+            <li>Facebook</li>
+            <li>Tweeter</li>
+            <li>Linked In</li>
+        </ol>
+        <h1>ul tag</h1>                                        <! ul Tag 순서가 없는 목록 Tag>
+        <ul>
+            <li>Facebook</li>
+            <li>Tweeter</li>
+            <li>Linked In</li>
+        </ul>
+
+        <table border="1">
+            <tr>                                                <! 테이블 만들기>
+                <th>Header 1</th>                               <! th는 테이블 헤드 이름>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>                                 <! td는 테이블에 내용>
+                <td>Data 1</td>
+            </tr>
+            <tr>
+                <td>Data 2</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+<br>
+        <table border="1">
+            <tr>                                                <! th, td구별해서 넣어줘야함><!숫자3은 3칸,3열 합치기>
+                <th colspan="3">Table Data</th>                 <! colspan 셀 합치기>
+                <th rowspan="3">Table Data</th>                 <! rowspan 열 합치기>
+            </tr>
+            
+            <tr>
+                <td>Table Data</td>
+                <td rowspan="2">Table Data</td>                 <! td안에 rowspan 을 넣으면 내용 안에 열 합치기>
+                <td>Table Data</td>
+            </tr>
+
+            <tr>
+                <td>Table Data</td>
+                <td>Table Data</td>
+            </tr>
+
+        </table>
+<br>
+        <form>
+            <input type="text" name="search"/>                  <! text 입력칸이 생성됨>
+            <input type="submit"/>                              <! submit 제출 버튼 생성됨>
+        </form>    
+
+                
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dyson</title>
+
+    <link rel="stylesheet" href="0523_조별과제.css">
+
+    <style>
+       * {
+            box-sizing: border-box;
+            margin; 0;
+            padding: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 20% 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            height: 100%;
+            grid-gap: 20px;
+            grid-template-areas:
+                'header header'
+                'main main'
+                'footer footer';
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <body>
+        <div id="wrap">
+            <div id="header"></div>
+            <div id="nav"></div>
+            <div id="sidebar"></div>
+            <div id="contents"></div>
+            <div id="footer"></div>
+        </div>
+    </body>
+
+
+</body>
+</html>

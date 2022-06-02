@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\Dyson_plus"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Java 수업"
+	}
+}

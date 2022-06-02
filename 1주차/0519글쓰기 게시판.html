@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--한글을 지원하는 대표적인 인코딩 방식 설정 목록-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+
+    <style type="text/css">
+        .board-table {
+            width: 100%;
+            border-spacing: 0;          
+        }
+
+        .name-textbox {
+            width: 20%;
+            height: 20px;                    
+        }        
+        
+        .title-textbox {
+            width: 100%;
+            height: 20px;
+        }
+
+        .upload-textbox {
+            width: 25%;
+            height: 20px;
+        }
+
+        .content-textbox {
+            width: 100%;
+			height: 200px;
+			padding: 30px;
+			box-sizing: border-box;         /*content-box, border-box, initial, inherit*/
+			/*border: solid 1px #1E90FF;    /* border 색상 */  
+			border-radius: 5px;             /* 테두리 둥글게 */
+			font-size: 5px;
+            resize: both;
+        }
+        
+        .textbox-grup {
+            width: auto;
+            float: left;
+            text-align: left;
+        }
+            
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .board-table th {
+            background: #eee;
+            border-top: 3px solid gray;
+            border-bottom: 1px solid gray;
+            padding: 5px;
+        }
+
+        .board-table td {
+            border-bottom: 0px solid #ccc;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            text-align: center;
+        }
+        
+        .board-table td:nth-child(2) {
+            width: 80%;
+            text-align: left;
+            padding: 7px 12px;               /*구조 선택자의 수열*/
+        }
+
+        .button {
+            float: right;
+            text-align: center;
+        }
+
+        .button-w {
+            width: 80px;
+            height: 30px;
+            border: solid;
+            border-radius: 10%;
+            background-color: auto;
+            color:black;
+            font: 12px 굴림;
+                      
+        }
+
+        .button-gray {
+            width: 60px;
+            height: 30px;
+            border: 10px;
+            border-radius: 5px;
+            background-color: gray;
+            color: white;
+            font: 12px 굴림;
+            font-weight: bold;            
+        }
+
+        .button-black {
+            width: 60px;
+            height: 30px;
+            border: 0px;
+            border-radius: 5px;
+            background-color: rgb(46, 46, 46);
+            color: white;
+            font: 12px 굴림;
+            font-weight: bold;        
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="select-grup">
+
+        <h2>게시판</h2>
+
+        <table class="board-table" border="1">
+            
+            <thead>
+                <tr>
+                    <th colspan="2">글쓰기</th>  
+                </tr>
+            </thead>
+      
+            <tbody>
+
+                <tr>
+                    <td class="name">이름</td>
+                    <td><input type="text" name="name" class="name-textbox"></td><br>
+                </tr> 
+                              
+                <tr>
+                    <td class="name">제목</td>
+                    <td><input type="text" name="title" class="title-textbox"></td><br>
+                </tr>
+                                   
+                <tr>
+                    <td class="name">내용</td>
+                    <td><textarea type="text" class="content-textbox"></textarea></td>
+                </tr>    
+
+            <tr>
+                <td class="name">업로드(파일선택:type="file"사용)</td>
+                <td><input type="text" class="upload-textbox">
+                    <input type="file"></td>       <!-- input type을 사용해서 파일 불러오는것-->       
+            </tr>
+            </tbody>
+
+
+            
+
+    </div>
+    </table>
+
+    <div class="button">
+        <p>
+        <button type="submit" class="button-gray">완료</button>
+        <input type="button" class="button-black" value="버튼"
+        onclick="locattion.href"="#0518테스트 게시판.html">
+
+        
+        </p>
+    </div>
+
+</from>
+
+</body>
+
+</html>

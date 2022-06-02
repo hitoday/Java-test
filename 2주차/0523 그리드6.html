@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  <!--한글을 지원하는 대표적인 인코딩 방식 설정 목록-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 grid System</title>
+
+    <style>
+        * {
+            /* 기본 초기화 */
+            margin: 0;
+            padding: 0;
+        }        
+
+        .container {
+            /* 너비 고정 and 중앙 정렬 */
+            width: 960px;
+            margin: 0 auto;
+
+            /* 그리드 구성하기*/
+            display: grid;
+            grid-template: 70px 1fr 70px / 200px 1fr;
+            grid-gap: 5px;
+            grid-template-areas:   /* 밑에 이름을 지정해 주는 경우는 드물긴하다. */
+                'header header'    /*cell에 이름을 정해주는것*/
+                'aside content'
+                'footer footer'
+        }
+
+        [class*=cell] {
+            box-sizing: : border-box;
+            border: 5px solid black;
+            padding: 10px;
+            border-radius: 10px
+        }
+
+        .cell-header { grid-area: header; }
+        .cell-aside { grid-area: aside; }
+        .cell-content { grid-area: content; }
+        .cell-footer { grid-area: footer; }
+     
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="cell-header">
+            <h1>Lorem ipsum dolor sit amet</h1>
+        </div>
+        
+        <div class="cell-aside">
+            <p>Lorem ipsum</p>
+            <p>dolor sit amet</p>
+            <p>Lorem ipsum</p>
+            <p>dolor sit amet</p>
+        </div>
+
+        <div class="cell-content">
+            <h1>Lorem ipsum dolor sit amet</h1>
+            <p>Lorem ipsum dolor sit amet</p>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="cell-footer">Lorem ipsum dolor sit amet</div>
+    </div>
+
+  
+    
+</body>
+
+</html>

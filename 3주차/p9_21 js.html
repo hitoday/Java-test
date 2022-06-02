@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">  <!--한글을 지원하는 대표적인 인코딩 방식 설정 목록-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+
+    <style>
+        
+    </style>
+</head>
+
+<body>   
+
+<script>
+    
+id= prompt('아이디 입력');
+if(id=='admin') {
+ password=prompt('비밀번호 입력');
+ if(password==='123456') {
+ location.href="20_login.html"
+ }
+ else {
+ location.href="20_error.html"
+ }
+}
+else {
+ location.href="20_error.html"
+}
+
+</script>
+
+    
+</body>
+
+</html>
